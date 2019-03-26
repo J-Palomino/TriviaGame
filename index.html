@@ -1,29 +1,46 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html lang="en-us">
+<head>
+ <meta charset="utf-8">
+    <title>The Office Quiz</title>
+</head>
 
-  <head>
+<body bgcolor=cyan>
 
-    <meta charset="UTF-8">
-    <title>Trivia Game</title>
+    <h1>The Office Quiz</h1>
 
-  </head>
+        You Have 30 Seconds to put your answers in!
 
-  <body>
+        <P>1. In S1E1 Pilot: Who started their first day at Dunder Mifflin Scranton?:<BR>
+            <input type="radio" name="1.In S1E1 Pilot: Who started their first day at Dunder Mifflin Scranton?" value="Jim Halpert">Jim Halpert
+            <input type="radio" name="1.In S1E1 Pilot: Who started their first day at Dunder Mifflin Scranton?" value="Erin Hannon">Erin Hannon
+        </p>
 
-    <div id="time-left"></div>
-
-    <p>
-            In S1E1 "Pilot": Who started their first day at Dunder Mifflin Scranton?
-    </p>
+        <P>2. In S1E2 "Diversity Day": What famous comedian's stand up routine does Michael imitate?:<BR>
+            <input type="radio" name="2. In S1E2 Diversity Day: What famous comedian's stand up routine does Michael imitate?" value="Chris Tucker" class="correct">Chris Tucker
+            <input type="radio" name="2. In S1E2 Diversity Day: What famous comedian's stand up routine does Michael imitate?" value="Richard Pryor" class="incorrect">Richard Pryor
+ 
+        </p>2. In S1E3 "Health Care": Which of these is NOT one of Jim and Pam's made up diseases?:<BR>
+            <input type="radio" name="2. In S1E3 Health Care: Which of these is NOT one of Jim and Pam's made up diseases?" value="Super Lice" class="correct">Super Lice
+            <input type="radio" name="2. In S1E3 Health Care: Which of these is NOT one of Jim and Pam's made up diseases?" value="Hotdog Fingers" class="incorrect">Hotdog Fingers
+        <p>
+        
+        </p>
+        
+        <script>
     
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <!-- Script -->
-    <script src="simpleTimer.js"></script>
+     $("input[type='radio']").click(function()({
+        if($(this).hasclass("correct")){
+             console.log("correct");
+         }
 
-  </body>
+     })
+        </script>
+
+        <input type="reset" value="Clear Form">
+    </form>
+</body>
 
 </html>
-
