@@ -7,7 +7,7 @@ function start() {
   countdown();
   $("#gameInstructions").css("display", 
   "none");
-  $("#gameCounter").css("display", "block")
+  $(".game").css("display", "block")
 }
 
 $(".timer").html(count);
