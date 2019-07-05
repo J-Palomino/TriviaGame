@@ -13,3 +13,17 @@ body {
     #2980b9
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+br {
+            display: block; /* makes it have a width */
+            content: ""; /* clears default height */
+            margin-top: 25px; /* change this to whatever height you want it */
+}
+
+#gameInstructions {
+  display: block;
+}
+
+.gameCounter{
+  display: none;
+}

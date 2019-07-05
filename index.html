@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
   <head>
     <meta charset="utf-8" />
 
@@ -10,29 +11,147 @@
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
+
   <body>
-    <h1>The Office Quiz</h1>
-    <button id="testButton">TEST BUTTON</button>
-    <p> You Have 30 Seconds to put your answers in!<span id="timer"></span></p>
+    <div class="row justify-content-md-center">
+      <h1>The Office Quiz</h1>
+    </div>
+
+    <div id="gameInstructions" class="container">
+      <div class="row justify-content-md-center">
+        <p>
+          When you press start you will have <span class="timer"></span> seconds
+          to answer as many questions about the office ass you can.
+        </p>
+      </div>
+      <div clas="row">
+        <div class="col text-center">
+          <button type="button" class="btn btn-light" id="start">
+            Start Game
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-md-center">
+      <h2  class="timer gameCounter"></h2>
+      <h2 class="gameCounter"> seconds remaining</h2>
+    </div>
     
-    <P>1. In S1E1 Pilot: Who started their first day at Dunder Mifflin Scranton?:</p>
-      <form class="center-text">
-            <input type="radio" name="group1" value="incorrect">Jim Halpert
-            <input type="radio" name="group1" value="correct">Erin Hannon<br>
-      </form>
-     <form class="center-text"> 
-        <P>2. In S1E2 "Diversity Day": What famous comedian's stand up routine does Michael imitate?:</p>
-            <input type="radio" name="group2" value="correct">Chris Tucker
-            <input type="radio" name="group2" value="incorrect">Richard Pryor<br>
- </form>
-<form class="center-text">
-        <p>3. In S1E3 "Health Care": Which of these is NOT one of Jim and Pam's made up diseases?:</p>
-            <input type="radio" name="group3" value="correct"> Super Lice
-            <input type="radio" name="group3" value="incorrect">Hotdog Fingers
-            <br>
+    <br />
+    <br />
+
+    <div class="row justify-content-md-center">
+      <P
+        >1. In S1E1 Pilot: Who started their first day at Dunder Mifflin
+        Scranton?:</P
+      >
+    </div>
+    <form>
+      <div class="row justify-content-md-center">
+        <div class="col-md-auto">
+          <p>
+            <input type="radio" name="group1" value="incorrect" class= /> Jim
+            Halpert
+          </p>
+        </div>
+        <div class="col-md-auto">
+          <p>
+            <input type="radio" name="group1" value="correct" /> Erin Hannon
+          </p>
+        </div>
+        <div class="col-md-auto">
+          <p>
+            <input type="radio" name="group1" value="incorrect" /> Stanley
+            Hudson
+          </p>
+        </div>
+      </div>
     </form>
-    <button type="btn" id="submit" class="button-primary">submit</button>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <br />
+
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <form class="center-text">
+          <P
+            >2. In S1E2 "Diversity Day": What famous comedian's stand up routine
+            does Michael imitate?:</P
+          >
+          <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+              <p>
+                <input type="radio" name="group2" value="correct" /> Chris
+                Tucker
+              </p>
+            </div>
+            <div class="col-md-auto">
+              <p>
+                <input type="radio" name="group2" value="incorrect" /> Richard
+                Pryor
+              </p>
+            </div>
+            <div class="col-md-auto">
+              <p>
+                <input type="radio" name="group2" value="incorrect" />
+                George Lopez
+              </p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <br />
+
+    <div class="conatiner">
+      <div class="row justify-content-md-center">
+        <form class="center-text">
+          <p>
+            3. In S1E3 "Health Care": Which of these is NOT one of Jim and Pam's
+            made up diseases?:
+          </p>
+          <div class="row justify-content-center">
+            <div class="col-md-auto">
+              <p>
+                <input type="radio" name="group3" value="correct" />
+                Super Lice
+              </p>
+            </div>
+            <div class="col-md-auto">
+              <p>
+                <input type="radio" name="group3" value="incorrect" />
+                Hotdog Fingers
+              </p>
+            </div>
+            <div class="col-md-auto">
+              <p>
+                <input type="radio" name="group3" value="incorrect" />
+                Dental Hydroflosion
+              </p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-md-auto">
+          <p><span id="results"></span></p>
+        </div>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col-md-auto">
+          <button type="button" id="submit" class="btn-light">submit</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/javascript/game.js"></script>
   </body>
 </html>
