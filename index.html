@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-
-<html lang="en">
   <head>
     <meta charset="utf-8" />
 
-    <title>Crystal Game</title>
+    <title>Dunder Trivia</title>
 
     <link
       rel="stylesheet"
@@ -12,29 +10,29 @@
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body class="center-text">
-
+  <body>
     <h1>The Office Quiz</h1>
-        <button id="testButton">TEST BUTTON</button>
-       <p> You Have 30 Seconds to put your answers in!<span id="timer"></span></p>
-
-        <P>1. In S1E1 Pilot: Who started their first day at Dunder Mifflin Scranton?:<BR>
-            <input type="radio" name="1.In S1E1 Pilot: Who started their first day at Dunder Mifflin Scranton?" value="Jim Halpert">Jim Halpert
-            <input type="radio" name="1.In S1E1 Pilot: Who started their first day at Dunder Mifflin Scranton?" value="Erin Hannon">Erin Hannon
-        </p>
-
-        <P>2. In S1E2 "Diversity Day": What famous comedian's stand up routine does Michael imitate?:<BR>
-            <input type="radio" name="2. In S1E2 Diversity Day: What famous comedian's stand up routine does Michael imitate?" value="Chris Tucker" class="correct">Chris Tucker
-            <input type="radio" name="2. In S1E2 Diversity Day: What famous comedian's stand up routine does Michael imitate?" value="Richard Pryor" class="incorrect">Richard Pryor
- 
-        </p>2. In S1E3 "Health Care": Which of these is NOT one of Jim and Pam's made up diseases?:<BR>
-            <input type="radio" name="2. In S1E3 Health Care: Which of these is NOT one of Jim and Pam's made up diseases?" value="Super Lice" class="correct">Super Lice
-            <input type="radio" name="2. In S1E3 Health Care: Which of these is NOT one of Jim and Pam's made up diseases?" value="Hotdog Fingers" class="incorrect">Hotdog Fingers
-        <input type="reset" value="Clear Form">
+    <button id="testButton">TEST BUTTON</button>
+    <p> You Have 30 Seconds to put your answers in!<span id="timer"></span></p>
+    
+    <P>1. In S1E1 Pilot: Who started their first day at Dunder Mifflin Scranton?:</p>
+      <form class="center-text">
+            <input type="radio" name="group1" value="incorrect">Jim Halpert
+            <input type="radio" name="group1" value="correct">Erin Hannon<br>
+      </form>
+     <form class="center-text"> 
+        <P>2. In S1E2 "Diversity Day": What famous comedian's stand up routine does Michael imitate?:</p>
+            <input type="radio" name="group2" value="correct">Chris Tucker
+            <input type="radio" name="group2" value="incorrect">Richard Pryor<br>
+ </form>
+<form class="center-text">
+        <p>3. In S1E3 "Health Care": Which of these is NOT one of Jim and Pam's made up diseases?:</p>
+            <input type="radio" name="group3" value="correct"> Super Lice
+            <input type="radio" name="group3" value="incorrect">Hotdog Fingers
+            <br>
     </form>
-</body>
+    <button type="btn" id="submit" class="button-primary">submit</button>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/javascript/game.js"></script>
   </body>
-</html>
 </html>
