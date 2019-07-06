@@ -5,9 +5,8 @@ function start() {
   count = 10;
   countDownInterval = setInterval(countdown, 1000);
   countdown();
-  $("#gameInstructions").css("display", 
-  "none");
-  $(".game").css("display", "block")
+  $("#gameInstructions").css("display", "none");
+  $(".game").css("display", "block");
 }
 
 $(".timer").html(count);
@@ -52,13 +51,13 @@ function checkCorrect() {
         "Oh no you got " + correct + " questions correct! YOU SUCK"
       );
       break;
-    case 2:
-      $("#results").html("You answered " + correct + " questions correctly.");
-      break;
-    case 3:
+    case 4:
       $("#results").html(
         "PERFECTENSCHLAG! You answered all " + correct + " questions correctly!"
       );
+      break;
+    case correct:
+      $("#results").html("You answered " + correct + " questions correctly.");
   }
 
   console.log("Correct Responses: " + correct);
@@ -70,7 +69,7 @@ function checkResponses() {
 }
 $("#start").click(() => {
   console.log("TESTING");
-  
+
   start();
 });
 
